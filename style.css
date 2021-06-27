@@ -37,7 +37,8 @@
   font-family: var(--Brandon);
 }
 
-#navbar-logo {
+#navbar-logo a {
+  text-decoration: none;
   font-family: var(--didot);
   font-weight: 500;
   font-style: italic;
