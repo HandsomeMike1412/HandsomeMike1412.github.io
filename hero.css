@@ -19,10 +19,10 @@
 
 .hero-h2 {
   color: var(--white);
-  font: italic 400 70px/87px "Didot", sans-serif;
+  font: italic 400 70px/87px "Didot", var(--Bodoni);
 }
 .hero-content p {
   color: var(--white);
-  font: italic 400 20px/25px "Didot", sans-serif;
+  font: italic 400 20px/25px "Didot", var(--Bodoni);
   border-top: 3.28px solid white;
 }

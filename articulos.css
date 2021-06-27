@@ -20,10 +20,10 @@
 }
 
 .contenido h2 > b {
-  font: italic 400 70px/90px "Didot", sans-serif;
+  font: italic 400 70px/90px "Didot", var(--Bodoni);
 }
 .contenido h2 {
-  font: italic 400 30px/37px "Didot", sans-serif;
+  font: italic 400 30px/37px "Didot", var(--Bodoni);
 }
 
 .contenido,
@@ -36,7 +36,7 @@ p {
   margin: 18px auto;
   color: var(--darkgray);
   text-decoration: none;
-  font: italic 400 18px/0px "Didot", sans-serif;
+  font: italic 400 18px/0px "Didot", var(--Bodoni);
 }
 .contenido a:hover {
   color: rgba(242, 150, 86, 1);

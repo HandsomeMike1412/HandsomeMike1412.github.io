@@ -33,7 +33,7 @@
 }
 .main-content p {
   margin: 35px 0;
-  font: italic 400 25px/31px "Didot", sans-serif;
+  font: italic 400 25px/31px "Didot", var(--Bodoni);
 }
 
 @media screen and (max-width: 768px) {

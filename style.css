@@ -12,6 +12,7 @@
   --lightblue: #337af1;
   --lightorange: rgba(255, 231, 214, 1);
   --Didot: "Didot", sans-serif;
+  --Bodoni: "Bodoni Moda", serif;
   --Brandon: "Brandon Grotesque", sans-serif;
 }
 * {
@@ -39,7 +40,7 @@
 
 #navbar-logo a {
   text-decoration: none;
-  font-family: var(--didot);
+  font-family: var(--Didot) var(--Bodoni);
   font-weight: 500;
   font-style: italic;
   color: var(--darkgray);
@@ -49,7 +50,7 @@
 
 #navbar-logo {
   cursor: pointer;
-  font-family: "Didot";
+  font-family: "Didot", var(--Bodoni);
 }
 .nav-menu {
   display: grid;

@@ -13,7 +13,7 @@
 .seccion-novia__content--h2,
 .seccion-novio__content--h2 {
   margin: 10px auto;
-  font: italic 400 60px/77px "Didot", sans-serif;
+  font: italic 400 60px/77px "Didot", var(--Bodoni);
 }
 
 .seccion-novia__content--decoration {
