@@ -1,0 +1,110 @@
+.gallery {
+  width: 100%;
+  max-width: 120rem;
+  margin: 50px auto;
+  padding: 0 2rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-3"
+    "img-1 img-4 img-5 img-6"
+    "img-7 img-7 img-8 img-6";
+}
+
+.image-gallery a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url(img/novia-img1.jfif);
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url(img/novia-img2.jfif);
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url(img/novia-img3.jfif);
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url(img/novia-img4.jfif);
+}
+
+.img-5 {
+  grid-area: img-5;
+  background-image: url(img/novia-img5.jfif);
+}
+
+.img-6 {
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url(img/novia-img6.jfif);
+}
+
+.img-7 {
+  grid-area: img-7;
+  background-image: url(img/novia-img7.jfif);
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url(img/novia-img8.jfif);
+}
+
+@media screen and (max-width: 900px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-2 img-2"
+      "img-1 img-1 img-3 img-3"
+      "img-4 img-4 img-5 img-5"
+      "img-6 img-7 img-7 img-7"
+      "img-8 img-8 img-8 img-8";
+  }
+  .image-gallery a {
+    height: 20rem;
+  }
+  .img-1 {
+    min-height: 41.5rem;
+  }
+  .img-6 {
+    min-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-1 img-1"
+      "img-2 img-2 img-2 img-2"
+      "img-3 img-3 img-3 img-3"
+      "img-4 img-4 img-4 img-4"
+      "img-5 img-5 img-5 img-5"
+      "img-6 img-6 img-6 img-6"
+      "img-7 img-7 img-7 img-7"
+      "img-8 img-8 img-8 img-8";
+  }
+  .image-gallery a,
+  .img-1,
+  .img-6 {
+    min-height: 30rem;
+    height: 30rem;
+  }
+}

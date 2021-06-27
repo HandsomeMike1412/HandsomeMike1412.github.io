@@ -1,0 +1,40 @@
+.main__seccion-novia {
+  width: 100%;
+  margin: 0 auto;
+}
+.main__seccion-novia--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.seccion-novia__content--h2,
+.seccion-novio__content--h2 {
+  margin: 10px auto;
+  font: italic 400 60px/77px "Didot", sans-serif;
+}
+
+.seccion-novia__content--decoration {
+  width: 10%;
+  margin: 0 auto;
+  border: 2px solid var(--darkgray);
+}
+
+.seccion-novia__content--image {
+  margin: 30px auto;
+  width: 90%;
+  padding: 0 2rem;
+  height: 60vh;
+  background-image: url("/img/hero-image.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .seccion-novia__content--image {
+    width: 100%;
+  }
+}

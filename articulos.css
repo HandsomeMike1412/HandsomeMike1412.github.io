@@ -1,0 +1,134 @@
+.secciones,
+.reverseSecciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-self: center;
+  width: 80%;
+  height: 100%;
+  margin: 100px auto;
+}
+
+.mobile-article {
+  display: none;
+}
+.articulo-content {
+  justify-self: start;
+  margin-left: 20px;
+  color: var(--darkgray);
+  width: 80%;
+}
+
+.contenido h2 > b {
+  font: italic 400 70px/90px "Didot", sans-serif;
+}
+.contenido h2 {
+  font: italic 400 30px/37px "Didot", sans-serif;
+}
+
+.contenido,
+p {
+  margin-bottom: 15px;
+  font: normal 330 18px/26px "Brandon Grotesque", sans-serif;
+}
+
+.contenido a {
+  margin: 18px auto;
+  color: var(--darkgray);
+  text-decoration: none;
+  font: italic 400 18px/0px "Didot", sans-serif;
+}
+.contenido a:hover {
+  color: rgba(242, 150, 86, 1);
+}
+.contenido a::before {
+  color: rgba(242, 150, 86, 1);
+}
+.reverseSecciones__container--content {
+  padding-left: 50px;
+}
+
+.imageContainer {
+  margin: 20px auto;
+  max-width: 100%;
+  display: grid;
+  grid-template: repeat(9, 32px) / repeat(8, 55px);
+}
+
+.background-orange {
+  grid-column: 2 / 9;
+  grid-row: 1 / 9;
+  max-width: 550px;
+  max-height: 320px;
+  background-color: var(--lightorange);
+}
+
+.background-image {
+  grid-column: 1 / 8;
+  grid-row: 2 / 10;
+  max-width: 550px;
+  max-height: 320px;
+  background-image: url("/img/articulopic1.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 768px) {
+  .secciones,
+  .reverseSecciones {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+  }
+  .reverseSecciones {
+    display: none;
+  }
+  .mobile-article {
+    display: grid;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .imageContainer {
+    display: grid;
+    grid-template: repeat(6, 30px) / repeat(7, 40px);
+    justify-self: center;
+    margin: 20px auto;
+  }
+  .background-orange {
+    grid-column: 2 / 8;
+    grid-row: 1 / 6;
+    max-width: 550px;
+    max-height: 320px;
+    background-color: var(--lightorange);
+  }
+
+  .background-image {
+    grid-column: 1 / 7;
+    grid-row: 2 / 7;
+    max-width: 550px;
+    max-height: 320px;
+  }
+  .contenido {
+    margin: 30px auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contenido h2 {
+    justify-content: start;
+  }
+  .contenido p {
+    /* margin-bottom: 20px; */
+    font: normal 330 18px/28px "Brandon Grotesque", sans-serif;
+  }
+}
